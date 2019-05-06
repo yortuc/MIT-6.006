@@ -27,5 +27,7 @@ def find_peak_binary_search(arr):
         par_arr = arr[h:]
     elif x>= right: # take left
         par_arr = arr[:h]
+    else:
+        par_arr = arr[:h]
 
     return find_peak_binary_search(par_arr)
